@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/styles.css">
+    <link href="./fontawesome-free-5.14.4-web/css/all.css">
+
+</head>
+<body>
+  <header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <!-- <a href="#" class="logo">nike</a> -->
+
+    <nav class="navbar">
+      <!-- <a class="btn-primary" href="{{ url_for('signup') }}">Sign up</a> -->
+        <a href="{{ url_for('Dresses') }}">Dresses</a>
+        <a href="{{ url_for('Gadgets') }}">Gadgets</a>
+        <a href="{{ url_for('Crockery') }}">Crockery</a>
+        <a href="{{ url_for('School_items') }}">School Items</a>
+        <!-- <a href="#">View Cart</a> -->
+    </nav>
+
+    <div class="icons">
+        <!-- <a href="#" class="fas fa-heart"></a> -->
+        
+        <a href="{{ url_for('view_cart') }}" class="fas fa-shopping-cart"></a>
+        <a class="fas fa-user" onclick="window.location.href='/login';"></a>
+        <a class="fas fa-user" onclick="window.location.href='/logout';"></a>
+        <!-- <a href="" class="fas fa-user"></a> -->
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+  <div class="slide-container active">
+      <div class="slide">
+          <div class="content">
+              <span>nike red shoes</span>
+              <h3>nike metcon shoes</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque veritatis aut laboriosam earum dolorem iste atque.</p>
+              <a href="#" class="btn">add to cart</a>
+          </div>
+          <div class="image">
+              <img src="../static/images/stationary.jpg" class="shoe" alt="">
+              <!-- <img src="images/home-text-1.png" class="text" alt=""> -->
+          </div>
+      </div>
+  </div>
+
+  <div class="slide-container">
+      <div class="slide">
+          <div class="content">
+              <span>nike blue shoes</span>
+              <h3>nike metcon shoes</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque veritatis aut laboriosam earum dolorem iste atque.</p>
+              <a href="#" class="btn">add to cart</a>
+          </div>
+          <div class="image">
+              <img src="../static/images/crockery.jpg" class="shoe" alt="">
+              <!-- <img src="images/home-text-2.png" class="text" alt=""> -->
+          </div>
+      </div>
+  </div>
+
+  <div class="slide-container">
+      <div class="slide">
+          <div class="content">
+              <span>nike yellow shoes</span>
+              <h3>nike metcon shoes</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque veritatis aut laboriosam earum dolorem iste atque.</p>
+              <a href="#" class="btn">add to cart</a>
+          </div>
+          <div class="image">
+              <img src="../static/images/Gadgets 2.jpg" class="shoe" alt="">
+              <!-- <img src="images/home-text-3.png" class="text" alt=""> -->
+          </div>
+      </div>
+  </div>
+
+  <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+  <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+
+</section>
+
+<!-- home section ends -->
+
+
+   <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" class aria-labelledby="navbarDarkDropdownMenuLink">
+              
+               <li><a class="btn-primary" href="{{ url_for('signup') }}">Sign up</a></li> 
+              <li> <a  class="btn-primary" href="{{ url_for('Dresses') }}">
+                Dresses
+              </a></li>
+              <li><a class="btn-primary" href="{{ url_for('Gadgets') }}">
+                Gadgets
+              </a></li>
+              <li><a class="btn-primary" href="{{ url_for('Crockery') }}">
+                Crockery
+              </a></li>
+              <li><a class="btn-primary" href="{{ url_for('School_items') }}">
+                School_items
+              </a></li>
+              <li><a class="btn-primary" href="{{ url_for('view_cart') }}">
+                view_cart
+              </a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+     <button class="button" type="button" onclick="window.location.href='/login';">login</button>
+    </div>
+   
+    <div>
+      <button class="button" type="button" onclick="window.location.href='/logout';">logout</button>
+    </div> 
+ </nav> 
+
+
+  </div>-->
+  <!-- <div class="container">
+  <div class="row">
+    <h1 class="head">Welcome to mynth</h1>
+    
+    
+    <div class="col">
+      <img src="/static/images/img2.jpeg" class= "image" class="ind"alt="">
+      <p class="para">shop for exicting dresses</p>
+    </div>
+    <div class="col">
+      <img src="/static/images/img3.jpeg" class="image" class="ind">
+      <p class="para">Shop for exicting items </p>
+    </div>
+    <div class="col">
+      <img src="/static/images/img4.jpeg" class="image" class="ind">
+      <p class="para">Shop for brand new kinds of footwear</p>
+    </div>
+  </div>
+</div> -->
+<!-- <div class="container-fluid">
+  <div class="slider">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/static/images/img6.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/static/images/img7.jpeg" class="d-block w-100" alt="...">
+        </div> -->
+        <!-- <div class="carousel-item">
+          <img src="/static/images/" class="d-block w-100" alt="...">
+        </div> -->
+      <!-- </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="text">
+      <p>Shop at our mynth website  and get exicitng coupons...</p>
+ </div>
+ </div>
+  </div>
+</div> -->
+</body>
+
+<script src="../static/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</html>
