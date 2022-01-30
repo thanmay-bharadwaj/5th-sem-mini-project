@@ -10,7 +10,9 @@
     <link href="./fontawesome-free-5.14.4-web/css/all.css">
 
 </head>
+
 <body>
+  
   <header>
 
     <div id="menu-bar" class="fas fa-bars"></div>
@@ -31,7 +33,7 @@
         
         <a href="{{ url_for('view_cart') }}" class="fas fa-shopping-cart"></a>
         <a class="fas fa-user" onclick="window.location.href='/login';"></a>
-        <a class="fas fa-user" onclick="window.location.href='/logout';"></a>
+        <a class="fas fa-sign-out-alt" onclick="window.location.href='/logout';"></a>
         <!-- <a href="" class="fas fa-user"></a> -->
     </div>
 
@@ -46,49 +48,68 @@
 <section class="home" id="home">
 
   <div class="slide-container active">
-      <div class="slide">
-          <div class="content">
-              <span>nike red shoes</span>
-              <h3>nike metcon shoes</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque veritatis aut laboriosam earum dolorem iste atque.</p>
-              <a href="#" class="btn">add to cart</a>
-          </div>
-          <div class="image">
-              <img src="../static/images/stationary.jpg" class="shoe" alt="">
-              <!-- <img src="images/home-text-1.png" class="text" alt=""> -->
-          </div>
+    <div class="slide">
+        <div class="content">
+            <!-- <span>nike yellow shoes</span> -->
+            <p>Sort Your Wardrobe For 2022!!</p>
+            <h3>Western Finds</h3>
+            <a href="{{ url_for('Dresses') }}" class="btn">Shop Now!!</a>
+        </div>
+        <div class="image">
+            <!-- <img src="../static/images/Dress.jpg" class="shoe" alt=""> -->
+            
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+  <div class="slide">
+      <div class="content">
+          <!-- <span>nike yellow shoes</span> -->
+          <p>Gadgets and Tech Features</p>
+          <h3>World's Coolest<br> Tech Collections</h3>
+          <a href="{{ url_for('Gadgets') }}" class="btn">Shop Now!!</a>
+      </div>
+      <div class="image">
+          <!-- <img src="../static/images/Gadgets.jpg" class="shoe" alt=""> -->
+          <!-- <img src="images/home-text-3.png" class="text" alt=""> -->
       </div>
   </div>
+</div>
+
+ 
 
   <div class="slide-container">
       <div class="slide">
           <div class="content">
-              <span>nike blue shoes</span>
-              <h3>nike metcon shoes</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque veritatis aut laboriosam earum dolorem iste atque.</p>
-              <a href="#" class="btn">add to cart</a>
+              <!-- <span>nike blue shoes</span> -->
+              <p>Handcrafted Tablewear</p>
+              <h3>To Enchance Your<br> Dining Experience.</h3>
+              <a href="{{ url_for('Crockery') }}" class="btn">Shop Now!!</a>
           </div>
           <div class="image">
-              <img src="../static/images/crockery.jpg" class="shoe" alt="">
+              <!-- <img src="../static/images/Crockery.jpg" class="shoe" alt=""> -->
               <!-- <img src="images/home-text-2.png" class="text" alt=""> -->
           </div>
       </div>
   </div>
 
   <div class="slide-container">
-      <div class="slide">
-          <div class="content">
-              <span>nike yellow shoes</span>
-              <h3>nike metcon shoes</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque veritatis aut laboriosam earum dolorem iste atque.</p>
-              <a href="#" class="btn">add to cart</a>
-          </div>
-          <div class="image">
-              <img src="../static/images/Gadgets 2.jpg" class="shoe" alt="">
-              <!-- <img src="images/home-text-3.png" class="text" alt=""> -->
-          </div>
-      </div>
-  </div>
+    <div class="slide">
+        <div class="content">
+            <!-- <span>nike red shoes</span> -->
+            <p>One Stop <strong>SHOP!!</strong></p>
+            <h3>Get Early Bird Deals On<br> Our New Collections.</h3>
+            <a href="{{ url_for('School_items') }}" class="btn">Shop Now!!</a>
+        </div>
+        <div class="image">
+            <!-- <img src="../static/images/Stationary.jpg" class="shoe" alt=""> -->
+            <!-- <img src="images/home-text-1.png" class="text" alt=""> -->
+        </div>
+    </div>
+</div>
+
+  
 
   <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
   <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
@@ -96,11 +117,11 @@
 </section>
 
 <!-- home section ends -->
-
-
-   <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
@@ -111,7 +132,7 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" class aria-labelledby="navbarDarkDropdownMenuLink">
               
-               <li><a class="btn-primary" href="{{ url_for('signup') }}">Sign up</a></li> 
+              
               <li> <a  class="btn-primary" href="{{ url_for('Dresses') }}">
                 Dresses
               </a></li>
@@ -132,18 +153,20 @@
         </ul>
       </div>
     </div>
-    <div>
-     <button class="button" type="button" onclick="window.location.href='/login';">login</button>
-    </div>
-   
-    <div>
+    <div> -->
+     <!-- <button class="button" type="button" onclick="window.location.href='/login';">login</button>
+    </div> -->
+    <!-- <div>
+      <button class="button" type="button" onclick="window.location.href='/signup';">Signup</button>
+    </div> -->
+    <!-- <div>
       <button class="button" type="button" onclick="window.location.href='/logout';">logout</button>
-    </div> 
- </nav> 
-
-
-  </div>-->
-  <!-- <div class="container">
+    </div> -->
+    
+  <!-- </nav>
+  
+  </div>
+  <div class="container">
   <div class="row">
     <h1 class="head">Welcome to mynth</h1>
     
@@ -161,8 +184,8 @@
       <p class="para">Shop for brand new kinds of footwear</p>
     </div>
   </div>
-</div> -->
-<!-- <div class="container-fluid">
+</div>
+<div class="container-fluid">
   <div class="slider">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -171,11 +194,9 @@
         </div>
         <div class="carousel-item">
           <img src="/static/images/img7.jpeg" class="d-block w-100" alt="...">
-        </div> -->
-        <!-- <div class="carousel-item">
-          <img src="/static/images/" class="d-block w-100" alt="...">
-        </div> -->
-      <!-- </div>
+        </div>
+        
+      </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -187,14 +208,17 @@
     </div>
     <div class="text">
       <p>Shop at our mynth website  and get exicitng coupons...</p>
- </div>
- </div>
+    </div>
+      
+      
+        
+      </div>
   </div>
 </div> -->
+
+ 
+
 </body>
-
-<script src="../static/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-
+<script src="../static/script.js"></script>
 </html>

@@ -34,7 +34,7 @@ header .logo{
 
 header .navbar a{
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color:var(--black);
   margin:0 1rem;
 }
@@ -45,7 +45,7 @@ header .navbar a:hover{
 
 header .icons a{
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color:var(--black);
   margin-left:1.5rem;
 }
@@ -76,9 +76,10 @@ header .icons a:hover{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap:1.5rem;
-  padding:0 9%;
-  padding-top: 9rem;
+  /* gap:1.5rem; */
+  /* padding:0 9%; */
+  /* padding-top: 1rem; */
+  /* padding-bottom: 40rem; */
 }
 
 .home .slide-container .slide .content{
@@ -94,23 +95,23 @@ header .icons a:hover{
 }
 
 .home .slide-container .slide .image{
-  flex:1 1 50rem;
-  padding-bottom: 15rem;
+  flex: 1 1 80rem;
+  /* padding-bottom: 26rem;  */
   position: relative;
   z-index: 0;
 }
 
-.home .slide-container .slide .image .shoe{
-  width:100%;
+/* .home .slide-container .slide .image .shoe{
+  width:100%; */
   /* transform: rotate(-35deg); */
-  animation:shoe .3s linear;
+  /* animation:shoe .3s linear;
 }
 
 @keyframes shoe{
   0%{
     transform: rotate(0deg) scale(.5);
   }
-}
+} */
 
 .home .slide-container .slide .image .text{
   position: absolute;
@@ -119,12 +120,12 @@ header .icons a:hover{
   animation:shoeText .5s linear .5s backwards;
 }
 
-@keyframes shoeText{
+/* @keyframes shoeText{
   0%{
     opacity: 0;
     top:-10rem;
   }
-}
+} */
 
 .home .slide-container .slide .content span{
   font-size: 2rem;
@@ -132,33 +133,45 @@ header .icons a:hover{
 }
 
 .home .slide-container .slide .content h3{
-  font-size: 5rem;
+  font-size: 3rem;
   color:var(--black);
+  margin-left: 10rem;
+  /* margin-top: 6rem; */
 }
 
 .home .slide-container .slide .content p{
+  /* display:flexbox ; */
   font-size: 1.7rem;
   color:#666;
-  padding:.5rem 0;
+  margin-top: 8rem;
+  margin-left: 10rem;
+  /* padding:.5rem 0; */
 }
 
 .home .slide-container:nth-child(1) .slide{
-  background:url(../images/home-bg-1.jpg) no-repeat;
+  background:url(../static/images/Dress.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .home .slide-container:nth-child(2) .slide{
-  background:url(../images/home-bg-2.jpg) no-repeat;
+  background:url(../static/images/Gadgets.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .home .slide-container:nth-child(3) .slide{
-  background:url(../images/home-bg-3.jpg) no-repeat;
+  background:url(../static/images/Crockery.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
+.home .slide-container:nth-child(4) .slide{
+  background:url(../static/images/Stationery.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
 
 .home .slide-container{
   display: none;
@@ -179,7 +192,7 @@ header .icons a:hover{
   width:5rem;
   line-height: 4.5rem;
   font-size: 2rem;
-  color:var(--black);
+  color:red;
   border:.2rem solid var(--black);
   cursor: pointer;
   text-align: center;
@@ -187,7 +200,7 @@ header .icons a:hover{
 
 .home #prev:hover,
 .home #next:hover{
-  color:#fff;
+  color:rgb(100, 95, 95);
   background:var(--orange);
 }
 
@@ -199,15 +212,41 @@ header .icons a:hover{
   right:3rem;
 }
 
+.btn{
+  display: inline-block;
+  margin-top: 3rem;
+  /* border-radius: .5rem; */
+  /* border:.2rem black; */
+  font-weight:bold;
+  font-size: 1.5rem;
+  /* color:var(--black); */
+  cursor: pointer;
+  background:none;
+  padding:.6rem 1rem;
+  border-color: black;
+  margin-left: 10.5rem;
+}
+
+.btn:hover{
+  background:var(--orange);
+  color:rgb(252, 1, 1);
+}
+
+
+
+
+
+
+
 
 
 .row {
   margin: 5px 0;
 }
-.image {
+/* .image {
   width: 20rem;
   height: 20rem;
-}
+} */
 .pos {
   margin-top: 10px;
 }
@@ -307,20 +346,20 @@ header .icons a:hover{
   font-size: large;
   font-style: italic;
 }
-/* .slider {
+.slider {
   margin-left: 5%;
   margin-bottom: 2%;
   width: 55%;
   height: 40%;
-} */
+}
 /* .text{
     position: relative;
     width:50%;
     height:50%;
     margin-left:85%;
     margin-bottom: 25%;
-
 } */
+
 
 /* media queries */
 
