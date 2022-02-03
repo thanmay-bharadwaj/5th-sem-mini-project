@@ -59,7 +59,7 @@ def Dresses():
 
         pidlist = [row[0] for row in value]
 
-        return render_template('shop.html', data=value, name='Dresses', imagelist=imagelist, pidlist=pidlist)
+        return render_template('dresses.html', data=value, name='Dresses', imagelist=imagelist, pidlist=pidlist)
     else:
         return redirect('/login')
 
