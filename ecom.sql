@@ -38,7 +38,7 @@ CREATE TABLE `buyer` (
 --
 
 /*!40000 ALTER TABLE `buyer` DISABLE KEYS */;
-INSERT INTO `buyer` VALUES (1,'preethi','Bengaluru',1,'1234567890'),(1,'preethi','Bengaluru',6,'1234567890'),(3,'jayanth','Bengaluru',7,'1234567890'),(3,'jayanth','Bengaluru',6,'1234567890'),(3,'jayanth','Bengaluru',13,'1234567890'),(5,'prajwal','Bengaluru',5,'1234567890');
+INSERT INTO `buyer` VALUES (1,'Ganesh','Bengaluru',1,'1234567890'),(1,'Preethi','Bengaluru',6,'1234567890'),(3,'Jayanth','Bengaluru',7,'1234567890'),(3,'umesh','Bengaluru',6,'1234567890'),(3,'mahesh','Bengaluru',13,'1234567890'),(5,'prajwal','Bengaluru',5,'1234567890');
 /*!40000 ALTER TABLE `buyer` ENABLE KEYS */;
 
 --
@@ -94,7 +94,7 @@ CREATE TABLE `products` (
 --
 
 /*!40000 ALTER TABLE `products` DISABLE KEYS */;
-INSERT INTO `products` VALUES (1,'High jeans','Dresses','1500','images/Dresses/pid1.jpg',15),(2,'Crop top','Dresses','850','images/Dresses/pid2.jpg',20),(3,'Western outfits','Dresses','1000','images/Dresses/pid3.jpg',10),(4,'Gowns','Dresses','800','images/Dresses/pid4.jpg',6),(5,'track pants','Dresses','500','images/Dresses/pid5.jpg',14),(6,'headphones','Gadgets','1000','images/Gadgets/pid6.jpg',2),(7,'Phone case','Gadgets','200','images/Gadgets/pid7.jpg',4),(8,'Screen Gaurd','Gadgets','60','images/Gadgets/pid8.jpg',25),(9,'pendrive','Gadgets','500','images/Gadgets/pid9.jpg',20),(10,'bluetooth Speaker','Gadgets','2000','images/Gadgets/pid10.jpg',5),(11,'cooking pan','Crockery','1500','images/Crockery/pid11.jpg',7),(12,'cooker','Crockery','3500','images/Crockery/pid12.jpg',12),(13,'Kadai','Crockery','2000','images/Crockery/pid13.jpg',3),(14,'glass bowls','Crockery','1500','images/Crockery/pid14.jpg',30),(15,'grilled pan','Crockery','2500','images/Crockery/pid15.jpg',6),(16,'school bags','Kids','4000','images/School/pid16.jpg',3),(17,'water bottles','Kids','1500','images/School/pid17.jpg',10),(18,'Lunch boxes','Kids','450','images/School/pid18.jpg',5),(19,'watches','Kids','1500','images/School/pid19.jpg',2);
+INSERT INTO `products` VALUES (1,'High jeans','Dresses','1500','images/Dresses/pid1.png',15),(2,'Crop top','Dresses','850','images/Dresses/pid2.png',20),(3,'Jacket','Dresses','1000','images/Dresses/pid3.png',10),(4,'Kurta','Dresses','800','images/Dresses/pid4.png',6),(5,'Track Pant','Dresses','500','images/Dresses/pid5.jpg',14),(6,'Headphones','Gadgets','1000','images/Gadgets/pid6.jpg',2),(7,'Phone case','Gadgets','200','images/Gadgets/pid7.jpg',4),(8,'Screen Gaurd','Gadgets','60','images/Gadgets/pid8.jpg',25),(9,'Pendrive','Gadgets','500','images/Gadgets/pid9.jpg',20),(10,'Bluetooth Speaker','Gadgets','2000','images/Gadgets/pid10.jpg',5),(11,'Cooking Pan','Crockery','1500','images/Crockery/pid11.jpg',7),(12,'Cooker','Crockery','3500','images/Crockery/pid12.jpg',12),(13,'Kadai','Crockery','2000','images/Crockery/pid13.jpg',3),(14,'Glass Bowl','Crockery','1500','images/Crockery/pid14.jpg',30),(15,'Grilled pan','Crockery','2500','images/Crockery/pid15.jpg',6),(16,'School bag','Kids','4000','images/School/pid16.jpg',3),(17,'Water Bottle','Kids','1500','images/School/pid17.jpg',10),(18,'Lunch boxe','Kids','450','images/School/pid18.jpg',5),(19,'Watche','Kids','1500','images/School/pid19.jpg',2);
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 
 --
@@ -110,7 +110,6 @@ CREATE TABLE `user_login` (
   `C_Email` varchar(45) NOT NULL,
   `C_Phone` varchar(45) NOT NULL,
   `C_password` varchar(45) NOT NULL,
-  -- `C_address` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -120,7 +119,7 @@ CREATE TABLE `user_login` (
 --
 
 /*!40000 ALTER TABLE `user_login` DISABLE KEYS */;
-INSERT INTO `user_login` VALUES (1,'preethi','preethi.kp189@gamil.com','6366013491','preethi',''),(2,'preethi','preethi.kp189@gamil.com','6366013491','preethi',''),(3,'jayanth','jayanth@gmail.com','985647124','jayanth',''),(4,'pradeep','pradeepspj@gamil.com','9035701332','pradeep',''),(5,'prajwal','prajwal@gmail.com','965875412','prajwal','');
+INSERT INTO `user_login` VALUES (1,'mahesh','mahesh@gamil.com','9578658760','mahesh'),(2,'umesh','umesh@gamil.com','5465465767','umesh'),(3,'akash','akash@gamil.com','5465465767','akash'),(4,'sathish','sathish@gamil.com','5465465767','sathish'),(5,'vasisht','vasisht@gamil.com','5465465767','vasisth');
 /*!40000 ALTER TABLE `user_login` ENABLE KEYS */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

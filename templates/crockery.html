@@ -15,64 +15,23 @@
 
     <div id="menu-bar" class="fas fa-bars"></div>
 
-    <!-- <a href="#" class="logo">nike</a> -->
-
     <nav class="navbar">
-      <!-- <a class="btn-primary" href="{{ url_for('signup') }}">Sign up</a> -->
-        <a href="{{ url_for('Dresses') }}">Dresses</a>
-        <a href="{{ url_for('Gadgets') }}">Gadgets</a>
-        <a href="{{ url_for('Crockery') }}">Crockery</a>
-        <a href="{{ url_for('School_items') }}">School Items</a>
-        <!-- <a href="#">View Cart</a> -->
+      <a href="{{ url_for('Dresses') }}">Dresses</a>
+      <a href="{{ url_for('Gadgets') }}">Gadgets</a>
+      <a href="{{ url_for('Crockery') }}">Crockery</a>
+      <a href="{{ url_for('School_items') }}">School Items</a>
     </nav>
 
     <div class="icons">
-        <!-- <a href="#" class="fas fa-heart"></a> -->
-        
-        <a href="{{ url_for('view_cart') }}" class="fas fa-shopping-cart"></a>
-        <a class="fas fa-user" onclick="window.location.href='/login';"></a>
-        <a class="fas fa-sign-out-alt" onclick="window.location.href='/logout';"></a>
-        <a class="fas fa-home" href="http://127.0.0.1:5000/" ></a>
-        <!-- <a href="" class="fas fa-user"></a> -->
+      <a href="{{ url_for('view_cart') }}" class="fas fa-shopping-cart"></a>
+      <a class="fas fa-user" onclick="window.location.href='/login';"></a>
+      <a class="fas fa-sign-out-alt" onclick="window.location.href='/logout';"></a>
+      <a class="fas fa-home" href="http://127.0.0.1:5000/"></a>
+      <!-- <a href="" class="fas fa-user"></a> -->
     </div>
 
-</header>
+  </header>
 
-  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
-        aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Menu
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              
-              <li> <a class="btn-primary" href="{{ url_for('Dresses') }}">
-                  Dresses
-                </a></li>
-              <li><a class="btn-primary" href="{{ url_for('Gadgets') }}">
-                  Gadgets
-                </a></li>
-                <li><a class="btn-primary" href="{{ url_for('Crockery') }}">
-                    Crockery
-                  </a></li>
-                 
-                <li><a class="btn-primary" href="{{ url_for('view_cart') }}">
-                  view_cart
-                </a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
   <div class="container text-center">
     <h1>Shop for {{name}}</h1>
     <div class="row">
@@ -100,16 +59,6 @@
       {%endfor%}
     </div>
   </div>
-
-
-
-  
-
-
-
-
-  <!-- </tbody>
-</table> -->
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

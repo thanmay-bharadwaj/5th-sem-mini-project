@@ -5,10 +5,10 @@ import mysql.connector
 
 connection = mysql.connector.connect(
     host="localhost",
-    database='e-com',
+    database='ecom',
     user="root",
     autocommit=True,
-    password="Thanmay67.,"
+    password="Mysql@8022"
 )
 
 cursor = connection.cursor(buffered=True)
